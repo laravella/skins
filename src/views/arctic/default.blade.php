@@ -10,7 +10,7 @@
         <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
     <title>
             @section('title')
-            Laravel Radiate
+            Laravel
             @show
         </title>
         <meta name="description" content="">
