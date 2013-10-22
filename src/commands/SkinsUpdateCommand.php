@@ -1,17 +1,17 @@
-<?php namespace Laravella\Cart;
+<?php namespace Laravella\Skins;
 
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputArgument;
 
-class CartUpdateCommand extends Command {
+class SkinsUpdateCommand extends Command {
 
 	/**
 	 * The console command name.
 	 *
 	 * @var string
 	 */
-	protected $name = 'cart:update';
+	protected $name = 'Skins:update';
 
 	/**
 	 * The console command description.
