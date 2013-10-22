@@ -2,7 +2,7 @@
 
     public function getIndex()
     {
-        return "asdffdfdfdkjdas;fkljaq]pafsdg['ad'";
+        return "Laravella Skins";
         //return View::make("skins::dbview");
     }
 
