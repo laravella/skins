@@ -1,0 +1,26 @@
+{
+    "name": "laravella/skins",
+    "description": "An easy way to skin Laravel Blade templates while maintaining MVC seperation.",
+    "authors": [
+        {
+            "name": "laravella",
+            "email": "laravella.cms@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "4.0.x"
+    },
+    "autoload": {
+        "classmap": [
+            "src/controllers",
+            "src/commands",
+            "src/migrations",
+            "src/database/seeds"
+        ],
+        "psr-0": {
+            "Laravella\\Skins": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
