@@ -85,7 +85,7 @@ class SkinsServiceProvider extends ServiceProvider {
 	{
 		$this->app['command.skins.install'] = $this->app->share(function($app)
 		{
-			return new CartInstallCommand();
+			return new SkinsInstallCommand();
 		});
 	}
 
@@ -93,7 +93,7 @@ class SkinsServiceProvider extends ServiceProvider {
 	{
 		$this->app['command.skins.update'] = $this->app->share(function($app)
 		{
-			return new CartUpdateCommand();
+			return new SkinsUpdateCommand();
 		});
 	}
 
