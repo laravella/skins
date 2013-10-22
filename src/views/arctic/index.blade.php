@@ -1,5 +1,5 @@
-@extends('layouts.default')
-@include('crud::skins.common.inc.navbar')
+@extends('skins::common.default')
+@include('skins::common.inc.navbar')
 
 {{-- Web site Title --}}
 @section('title')

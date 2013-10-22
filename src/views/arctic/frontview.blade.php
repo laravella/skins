@@ -20,7 +20,7 @@
 
 @include("skins::".$skin['admin'].".inc.footer")
 
-@section('skins.".$skin['admin'].".content')
+@section("skins.".$skin['admin'].".content")
 @yield($action)
 @stop
 
