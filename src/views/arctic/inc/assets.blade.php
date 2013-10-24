@@ -27,12 +27,11 @@
 <!-- CKEditor -->
 <script type="text/javascript" src="/packages/laravella/skins/{{$skin['admin']}}/scripts/ckeditor/ckeditor.js"></script>
 
-<!-- Internet Explorer .png-fix -->
+@stop
 
-<!--[if IE 6]>
-        <script type="text/javascript" src="packages/laravella/skins/assets/scripts/DD_belatedPNG_0.0.7a.js"></script>
-        <script type="text/javascript">
-                DD_belatedPNG.fix('.png_bg, img, li');
-        </script>
-<![endif]-->
+@section('assets_bottom')
+    <script src="/packages/laravella/skins/{{$skin['admin']}}/scripts/plugins.js"></script>
+    <script src="/packages/laravella/skins/{{$skin['admin']}}/scripts/main.js"></script>
+    <script src="/packages/laravella/skins/{{$skin['admin']}}/scripts/bootstrap.min.js"></script>
+    <script src="/packages/laravella/skins/{{$skin['admin']}}/scripts/google-analytics.js"></script>
 @stop
