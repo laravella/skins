@@ -36,3 +36,10 @@
         </script>
 <![endif]-->
 @stop
+
+@section('assets_bottom')
+    <script src="/packages/laravella/skins/{{$skin['admin']}}/scripts/plugins.js"></script>
+    <script src="/packages/laravella/skins/{{$skin['admin']}}/scripts/main.js"></script>
+    <script src="/packages/laravella/skins/{{$skin['admin']}}/scripts/bootstrap.min.js"></script>
+    <script src="/packages/laravella/skins/{{$skin['admin']}}/scripts/google-analytics.js"></script>
+@stop
