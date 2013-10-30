@@ -1,5 +1,6 @@
     /* ravel */
     #page {min-height:600px;}
+    #page {min-height:600px;}
     .package {margin-left:10px;padding:3px;border-radius:2px;margin-top:2px;}
     .header {cursor:pointer;}
 
@@ -51,8 +52,8 @@
     }
     td.td_toolbox {
         text-align:center; 
-        width: 89px; 
-        max-width:89px;
+        width: 107px; 
+        max-width:107px;
     }
     span.h1a {
         color : #c0c0c0;
@@ -62,3 +63,7 @@
         margin-top : 30px;
         margin-bottom : 30px;
     }
+
+	#body-wrapper {
+		margin-top: 60px;
+	}

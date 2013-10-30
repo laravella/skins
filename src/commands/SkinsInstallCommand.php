@@ -37,7 +37,7 @@ class SkinsInstallCommand extends Command {
 	 */
 	public function fire()
 	{
-                $this->call('config:publish',array('package'=>'laravella/skins'));
+//                $this->call('config:publish',array('package'=>'laravella/skins'));
                 $this->call('asset:publish',array('package'=>'laravella/skins'));
 		$this->info('Skins installation complete.');
 	}
