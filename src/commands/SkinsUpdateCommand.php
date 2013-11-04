@@ -11,7 +11,7 @@ class SkinsUpdateCommand extends Command {
 	 *
 	 * @var string
 	 */
-	protected $name = 'Skins:update';
+	protected $name = 'skins:update';
 
 	/**
 	 * The console command description.

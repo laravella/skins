@@ -14,8 +14,6 @@
 
 <!-- CSS adjustments for browsers with JavaScript disabled -->
 <noscript><link rel="stylesheet" href="packages/laravella/uploader/assets/css/jquery.fileupload-ui-noscript.css"></noscript>
-<!-- Bootstrap CSS Toolkit styles -->
-<link rel="stylesheet" href="packages/laravella/uploader/assets/styles/css/main.css">
 @stop
 
 @section('js_assets')
@@ -98,13 +96,6 @@
     </tr>
 {% } %}
 </script>
-
-{{--
-this breaks the bootstrap navbar
-
-<!-- Bootstrap JS is not required, but included for the responsive demo navigation -->
-<script src="packages/laravella/uploader/assets/js/vendor/bootstrap.min.js"></script>
---}}
 
 <script src="packages/laravella/uploader/assets/js/jquery-1.8.3.min.js"></script>
 <!-- The jQuery UI widget factory, can be omitted if jQuery UI is already included -->
