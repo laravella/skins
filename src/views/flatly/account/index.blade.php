@@ -1,4 +1,7 @@
 @extends('skins::flatly.default')
+@include("skins::flatly.inc.assets")
+@include("skins::flatly.inc.title")
+@include("skins::flatly.inc.extra_head")
 
 @include('skins::flatly.inc.navbar')
 
