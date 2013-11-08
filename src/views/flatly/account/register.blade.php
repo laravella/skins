@@ -1,8 +1,8 @@
 @extends('skins::common.default')
 
-@include("skins::flatly.inc.assets")
-@include("skins::flatly.inc.title")
-@include("skins::flatly.inc.extra_head")
+@include(Options::get('skin').".inc.assets")
+@include(Options::get('skin').".inc.title")
+@include(Options::get('skin').".inc.extra_head")
 
 @include('skins::common.inc.navbar')
 

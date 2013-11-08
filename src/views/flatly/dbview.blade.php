@@ -14,8 +14,10 @@
 @include("skins::common.actions.getinsert")
 @include("skins::common.actions.getselect")
 
-@include("skins::".$skin['admin'].".inc.bottom")
-@include("skins::".$skin['admin'].".inc.footer")
+{{-- override default (common) view --}}
+@include($skin['admin'].".inc.bottom")
+{{-- override default (common) view --}}
+@include($skin['admin'].".inc.footer")
 
 @section('content')
 @yield($action)

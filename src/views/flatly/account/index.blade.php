@@ -1,9 +1,9 @@
-@extends('skins::flatly.default')
-@include("skins::flatly.inc.assets")
-@include("skins::flatly.inc.title")
-@include("skins::flatly.inc.extra_head")
+@extends(Options::get('skin').".default")
+@include(Options::get('skin').".inc.assets")
+@include(Options::get('skin').".inc.title")
+@include(Options::get('skin').".inc.extra_head")
 
-@include('skins::flatly.inc.navbar')
+@include(Options::get('skin').'.inc.navbar')
 
 {{-- Web site Title --}}
 @section('title')

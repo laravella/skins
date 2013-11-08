@@ -1,5 +1,5 @@
-@extends('skins::flatly.default')
-@include('skins::flatly.inc.navbar')
+@extends(Options::get('skin').'.default')
+@include(Options::get('skin').'.inc.navbar')
 
 {{-- Web site Title --}}
 @section('title')

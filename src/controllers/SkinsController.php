@@ -3,12 +3,11 @@
     public function getIndex()
     {
         return "Laravella Skins";
-        //return View::make("skins::dbview");
     }
 
     public function getHello($table = "") 
     {
-        return View::make("skins::dbview");
+        return View::make(Options::get('skin')."dbview");
     }
     
     /**

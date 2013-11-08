@@ -1,26 +1,26 @@
-@include("skins::".$skin['admin'].".inc.assets")
+@include($skin['admin'].".inc.assets")
 
-@include("skins::".$skin['admin'].".inc.title")
-@include("skins::".$skin['admin'].".inc.extra_head")
+@include($skin['admin'].".inc.title")
+@include($skin['admin'].".inc.extra_head")
 
-@include('skins::".$skin['admin'].".inc.navbar')
+@include($skin['admin'].".inc.navbar")
 
 {{--
-@include("skins::".$skin['admin'].".actions.getsearch")
-@include("skins::".$skin['admin'].".inc.messages")
+@include($skin['admin'].".actions.getsearch")
+@include($skin['admin'].".inc.messages")
 
-@include("skins::".$skin['admin'].".actions.getdelete")
-@include("skins::".$skin['admin'].".actions.getedit")
-@include("skins::".$skin['admin'].".actions.getindex")
-@include("skins::".$skin['admin'].".actions.getinsert")
-@include("skins::".$skin['admin'].".actions.getselect")
+@include($skin['admin'].".actions.getdelete")
+@include($skin['admin'].".actions.getedit")
+@include($skin['admin'].".actions.getindex")
+@include($skin['admin'].".actions.getinsert")
+@include($skin['admin'].".actions.getselect")
 --}}
 
-@include("skins::".$skin['admin'].".inc.bottom")
+@include($skin['admin'].".inc.bottom")
 
-@include("skins::".$skin['admin'].".inc.footer")
+@include($skin['admin'].".inc.footer")
 
-@section('skins.".$skin['admin'].".content')
+@section($skin['admin'].".content")
 @yield($action)
 @stop
 

@@ -2,7 +2,7 @@
 <!-- CSS -->
 @foreach($assets as $asset)
     @if($asset['type'] == 'styles')
-    <link rel="stylesheet" href="/packages/laravella/skins/{{$skin['admin']}}/{{$asset['url']}}">
+    <link rel="stylesheet" href="/packages/laravella/skins/{{$skin['adminName']}}/{{$asset['url']}}">
     @endif
 @endforeach
 @stop
@@ -11,7 +11,7 @@
 <!-- JS -->
     @foreach($assets as $asset)
         @if($asset['type'] == 'scripts' & $asset['position'] == 'top')
-        <script type="text/javascript" src="/packages/laravella/skins/{{$skin['admin']}}/{{$asset['url']}}"></script>
+        <script type="text/javascript" src="/packages/laravella/skins/{{$skin['adminName']}}/{{$asset['url']}}"></script>
         @endif
     @endforeach
 @stop
@@ -20,7 +20,7 @@
 <!-- JS -->
 @foreach($assets as $asset)
     @if($asset['type'] == 'scripts' & $asset['position'] == 'bottom')
-    <script type="text/javascript" src="/packages/laravella/skins/{{$skin['admin']}}/{{$asset['url']}}"></script>
+    <script type="text/javascript" src="/packages/laravella/skins/{{$skin['adminName']}}/{{$asset['url']}}"></script>
     @endif
 @endforeach
 @stop

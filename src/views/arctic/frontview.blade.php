@@ -16,11 +16,11 @@
 @include("skins::common.actions.getselect")
 --}}
 
-@include("skins::".$skin['admin'].".inc.bottom")
+@include($skin['admin'].".inc.bottom")
 
-@include("skins::".$skin['admin'].".inc.footer")
+@include($skin['admin'].".inc.footer")
 
-@section("skins.".$skin['admin'].".content")
+@section($skin['admin'].".content")
 @yield($action)
 @stop
 
