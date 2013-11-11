@@ -1,5 +1,5 @@
 @extends(Options::get('skin').'.default')
-@include(Options::get('skin').'.inc.navbar')
+@include('skins::common.inc.navbar')
 
 {{-- Web site Title --}}
 @section('title')

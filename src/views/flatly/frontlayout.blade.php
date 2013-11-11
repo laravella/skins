@@ -35,6 +35,7 @@
     </head>
     <body>
         
+        
         <!-- default.blade.php --> 
         
         <!--[if lt IE 7]>

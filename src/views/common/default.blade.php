@@ -81,6 +81,7 @@
         </div>
 
         @yield('bottom')
+        @yield('assets_bottom')
         
     </body>
 </html>

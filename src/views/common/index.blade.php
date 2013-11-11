@@ -1,4 +1,4 @@
-@extends('skins::common.default')
+@extends(Options::get('skin').'.default')
 @include('skins::common.inc.navbar')
 
 {{-- Web site Title --}}

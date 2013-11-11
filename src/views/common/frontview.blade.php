@@ -1,26 +1,14 @@
-@include($skin['admin'].".inc.assets")
+@include("skins::common.inc.assets")
 
-@include($skin['admin'].".inc.title")
-@include($skin['admin'].".inc.extra_head")
+@include("skins::common.inc.title")
+@include("skins::common.inc.extra_head")
 
-@include($skin['admin'].".inc.navbar")
+@include('skins::common.inc.navbar')
 
-{{--
-@include($skin['admin'].".actions.getsearch")
-@include($skin['admin'].".inc.messages")
+@include("skins::common.inc.bottom")
+@include("skins::common.inc.footer")
+@section("skins::common.content")
 
-@include($skin['admin'].".actions.getdelete")
-@include($skin['admin'].".actions.getedit")
-@include($skin['admin'].".actions.getindex")
-@include($skin['admin'].".actions.getinsert")
-@include($skin['admin'].".actions.getselect")
---}}
-
-@include($skin['admin'].".inc.bottom")
-
-@include($skin['admin'].".inc.footer")
-
-@section($skin['admin'].".content")
 @yield($action)
 @stop
 
