@@ -13,6 +13,7 @@
 @include("skins::common.actions.getindex")
 @include("skins::common.actions.getinsert")
 @include("skins::common.actions.getselect")
+@include("skins::common.actions.getpage")
 
 @include("skins::common.inc.bottom")
 @include("skins::common.inc.footer")

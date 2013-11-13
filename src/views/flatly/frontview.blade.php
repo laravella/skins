@@ -7,8 +7,8 @@
 
 @include("skins::common.inc.bottom")
 @include("skins::common.inc.footer")
-@section("skins::common.content")
 
+@section("skins::common.content")
 @yield($action)
 @stop
 
