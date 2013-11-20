@@ -39,6 +39,11 @@
 <form method="POST" id="dataForm" action="/db/edit/{{$tableName}}/{{$record[$pkName]}}">
     @foreach($meta as $field)
     
+        <div id="field_help_{{$field['id']}}" class="alert alert-heading" style="display:none">
+            <button type="button" class="close" onclick="javascript:$('#field_help_{{$field['id']}}').hide();">&times;</button>
+            <strong>Description : </strong> {{$field['description']}}
+        </div>
+    
         @if ($displayTypes[$field['display_type_id']] != 'nodisplay')
         <div class="row">
             <div class="span4">{{$field['label']}}</div>
@@ -90,6 +95,7 @@
             @endif
             @if(Options::get('configure'))
                 <a href="/db/edit/_db_fields/{{$field['id']}}" id="btnFieldEdit" class="btn"><i class="icon-wrench"></i></a>
+                <a href="#" onclick="showFieldHelp('{{$field['id']}}');" id="btnEdit" class="btn"><i class="icon-info-sign"></i></a>
             @endif    
             
         </div>

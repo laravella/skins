@@ -18,6 +18,11 @@ function logBox() {
     $('.alert-log').css('opacity', '1');
 }
 
+function showFieldHelp(id) {
+    $('#field_help_'+id).show();
+    $('#field_help_'+id).css('opacity', '1');
+}
+
 function sendSearch() {
     var qString = "";
     var qA = new Object();
