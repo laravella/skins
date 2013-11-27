@@ -70,10 +70,10 @@
 
 					<!-- Content -->
 					@yield('content')
-					<!-- ./ content -->
+					<!-- ./ Content -->
 
 				</div>
-				<!-- ./ container -->
+				<!-- ./ Container -->
 				
                 @yield('footer')
 

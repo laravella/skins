@@ -39,7 +39,8 @@ body {background-image: url("../img/cc-by-coda.jpg"); background-repeat:no-repea
     }
 
     table.dbtable td {
-        border : 1px solid #dddddd;
+        border-left : 1px dotted #808080;
+        border-right : 1px dotted #808080;
     }
 
     table.dbtable td input[type="text"] {

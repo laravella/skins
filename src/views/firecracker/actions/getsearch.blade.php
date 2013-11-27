@@ -1,6 +1,9 @@
 {{-------------------------------------------------------- getSearch --------------}}
 
 @section('search')
+
+<!-- skins::firecracker.actions.getSearch -->
+
 @if($action == 'getSelect' || $action == 'getSearch')
 {{-- the search popup box --}}
 <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

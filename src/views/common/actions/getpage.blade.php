@@ -1,6 +1,9 @@
 {{-------------------------------------------------------- getSelect --------------}}
 
 @section('getPage')
+
+<!-- skins::common.actions.getpage -->
+
 @if($action == 'getPage' || @action == 'getPage')
 
 @if($displayType == "text/html")
@@ -10,13 +13,11 @@
 </div>
 <div class="well">
     <div class="btn-group">
-        <a href="/db/insert/{{$tableName}}" class="btn">New</a>
-        <a href="javascript:sendDelete()" class="btn">Delete</a>
         <a href="#myModal" role="button" class="btn" data-toggle="modal">Search</b></a>
     </div>
     <div class="btn-group">
         @if(Options::get('debug'))
-        <a href="#" id="btnVisualize" onclick="javascript:debugBox();" class="btn">Debug</a>
+            <a href="#" id="btnVisualize" onclick="javascript:debugBox();" class="btn">Debug</a>
         @endif
         <a href="#" id="btnLog" onclick="javascript:logBox();" class="btn">Log</a>
     </div>
@@ -31,6 +32,11 @@
 
 @endif
 
+@foreach ($contents as $content)
+    {{$content['content']}}<br />
+@endforeach
+
+<br /><br />
 
 @if(isset($data) && isset($data[0]))
 
@@ -40,7 +46,6 @@
         {{-- the field titles --}}
         
         <tr>
-            <th></th>
             
             @foreach($meta as $name=>$field)
             
@@ -66,25 +71,6 @@
         
         @foreach($data as $record)
         <tr id="tr-{{$tableName}}-{{$record->id}}">
-            <td class="td_toolbox">
-                <div class="btn-group">
-                    <a data-toggle="button" data-tablename="{{$tableName}}" data-recordid="{{$record->id}}" class="record btn" href="#" id="chkbtn_{{$tableName}}_{{$record->id}}" onclick="javascript:checkRec('{{$tableName}}', {{$record->id}})">
-                        <b id="chkico_{{$record->id}}" class="icon-ok-circle"></b>
-                    </a>
-                    @foreach($record as $name=>$value)
-                        @if((isset($prefix) && isset($prefix[$name])) || (isset($meta) && isset($meta[$name]) && $meta[$name]['key'] == 'PRI'))
-                            <a data-recordid="{{$record->id}}" class="edit btn" href="{{$prefix[$name]}}{{$value}}" id="editbtn_{{$tableName}}_{{$record->id}}">
-                                <b id="editico_{{$record->id}}" class="icon-edit"></b>
-                            </a>
-                        @endif
-                    @endforeach
-                    <!--
-                    <a data-recordid="{{$record->id}}" class="save btn" href="#" id="savebtn_{{$tableName}}_{{$record->id}}" onclick="javascript:saveRec('{{$tableName}}', {{$record->id}})">
-                        <b id="saveico_{{$record->id}}" class="icon-save"></b>
-                    </a> 
-                    -->
-                </div>
-            </td>
 
             @foreach($meta as $name=>$field)
             
@@ -115,7 +101,10 @@
                         {{-- hover-edit : see : https://github.com/mruoss/HoverEdit-jQuery-Plugin --}}
 
                         <td>
+                            {{ $record->{$name} }}
+                            <!--
                             <input data-tablename="{{$tableName}}" data-recordid="{{$record->id}}" data-fieldname="{{$name}}" style="width:{{$field['width']}}px" type="text" disabled value="{{ $record->{$name} }}" id="{{$tableName}}-{{$record->id}}-{{$name}}" class="hover-edit fld-{{$tableName}}-{{$record->id}}" />
+                            -->
                         </td>
                         @if(isset($field['pk']))
                         {{-- this is a foreign key, it contains a reference to a primary key --}}

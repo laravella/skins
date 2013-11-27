@@ -14,7 +14,7 @@
 
 <!-- detailed error messages -->
 <!-- <div class="alert alert-success alert-error alert-block"> -->
-<div class="alert alert-log"@if($status == "success" || $status == "info") style="display:none"@endif>
+<div class="alert alert-log"@if($status == "success" || $status == "info") style="display:none" @endif>
     <button type="button" class="close" onclick="javascript:$('.alert-log').hide();">&times;</button>
     <strong>Log</strong>
     <table>
