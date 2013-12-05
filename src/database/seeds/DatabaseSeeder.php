@@ -9,8 +9,6 @@ class DatabaseSeeder extends Seeder {
 	 */
 	public function run()
 	{
-		$this->call('ProductsSeeder');
-                $this->command->info('Products table seeded.');
 	}
 
 }
