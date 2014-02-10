@@ -1,6 +1,7 @@
 {{-------------------------------------------------------- getSelect --------------}}
 
 @section('getSelect')
+
 @if($action == 'getSelect' || @action == 'getSearch')
 
 @if($displayType == "text/html")

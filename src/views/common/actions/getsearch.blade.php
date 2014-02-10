@@ -11,7 +11,7 @@
     <div class="modal-body">
         <div class="row">
             @foreach($meta as $field)
-            @if($field['searchable'] == 1)
+            @if(isset($field['searchable']) && $field['searchable'] == 1)
             <div class="span2">{{$field['label']}}</div>
 
                 @if(isset($meta[$field['name']]['pk']))

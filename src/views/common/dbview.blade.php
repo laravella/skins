@@ -14,6 +14,8 @@
 @include("skins::common.actions.getinsert")
 @include("skins::common.actions.getselect")
 
+@include("skins::common.widgets.all")
+
 @include("skins::common.inc.bottom")
 @include("skins::common.inc.footer")
 

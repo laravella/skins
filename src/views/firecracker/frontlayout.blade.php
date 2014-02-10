@@ -84,5 +84,7 @@
         @yield('bottom')
         @yield('assets_bottom')
         
+        <!-- laravella::skins::firecracker.frontlayout.blade.php -->
+        
     </body>
 </html>

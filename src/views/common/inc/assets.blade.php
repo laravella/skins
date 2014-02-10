@@ -1,7 +1,5 @@
 @section('assets_css')
 
-<?php //p($skin); die; ?>
-
 <!-- CSS -->
 @foreach($assets as $asset)
     @if($asset['type'] == 'styles')
