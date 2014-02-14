@@ -1,4 +1,4 @@
-@extends(Options::get('skin').".default")
+@extends(Options::getSkin()['admin'].".default")
 @include("skins::common.inc.assets")
 @include("skins::common.inc.title")
 @include("skins::common.inc.extra_head")

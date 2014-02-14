@@ -1,4 +1,5 @@
 @section('assets_css')
+<!-- start// skins::common.inc.assets -->
 
 <!-- CSS -->
 @foreach($assets as $asset)
@@ -24,4 +25,7 @@
     <script type="text/javascript" src="/packages/{{$skin['vendor']}}/{{$skin['package']}}/{{$skin['name']}}/{{$asset['url']}}"></script>
     @endif
 @endforeach
+
+<!-- end// skins::common.inc.assets -->
+
 @stop

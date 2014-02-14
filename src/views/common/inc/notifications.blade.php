@@ -1,3 +1,5 @@
+<!-- start// skins::common.inc.notifications -->
+
 @if (count($errors->all()) > 0)
 <div class="alert alert-error alert-block">
 	<button type="button" class="close" data-dismiss="alert">&times;</button>
@@ -37,3 +39,5 @@
 	{{ $message }}
 </div>
 @endif
+
+<!-- end// skins::common.inc.notifications -->

@@ -1,6 +1,7 @@
 {{-------------------------------------------------------- messages --------------}}
 
 @section('messages')
+<!-- start// skins::common.inc.messages -->
 
 @if(Options::get('debug'))
 <!-- definitive status message -->
@@ -38,5 +39,7 @@
     {{-- requires bottom.blade.php to load json at the bottom of the page --}}
     <br />
 </div>
+
+<!-- end// skins::common.inc.messages -->
 
 @stop

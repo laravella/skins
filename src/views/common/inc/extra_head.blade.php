@@ -1,6 +1,6 @@
 {{-------------------------------------------------------- extra_head --------------}}
-
 @section('extra_head')
+<!-- start// skins::common.inc.extra_head -->
 
 <script type="text/javascript">
     
@@ -21,5 +21,6 @@
     });
     
 </script>
+<!-- end// skins::common.inc.extra_head -->
 
 @stop

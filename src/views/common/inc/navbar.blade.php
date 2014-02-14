@@ -1,5 +1,7 @@
 @section('navbar')
-<!-- layouts.partials.navbar -->
+
+<!-- start// skins::common.inc.navbar -->
+
 <div class="navbar navbar-fixed-top" style="-webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0;">
 	<div class="navbar-inner">
 		<div class="container">
@@ -53,5 +55,7 @@
 		</div>
 	</div>
 </div>
-<!-- ./ navbar -->
+
+<!-- end// skins::common.inc.navbar -->
+
 @stop

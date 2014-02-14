@@ -69,7 +69,6 @@
             @elseif ($displayTypes[$field['display_type_id']] == 'widget')
             <!-- a widget -->
                 @include("skins::common.widgets.".$widgetTypes[$field['widget_type_id']], array('name'=>$field['name'],'value'=>$record[$field['name']],'width'=>$field['width']))
-                
                 @yield($widgetTypes[$field['widget_type_id']])
             <!-- a widget -->
             @else
