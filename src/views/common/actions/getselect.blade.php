@@ -21,4 +21,6 @@
         {{$data->links()}}
         @endif
     @endif
+    
 @stop
+
