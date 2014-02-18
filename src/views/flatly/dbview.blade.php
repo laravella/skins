@@ -14,6 +14,7 @@
 @include("skins::common.actions.getinsert")
 @include("skins::common.actions.getselect")
 @include("skins::common.actions.getkeys")
+@include("skins::common.actions.getkeyedit")
 @include("skins::common.actions.getpage")
 
 @include("skins::common.inc.bottom")
