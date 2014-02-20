@@ -1,7 +1,7 @@
 {
     "name": "laravella/skins",
     "description": "An easy way to skin Laravel Blade templates while maintaining MVC seperation.",
-    "version": "v4.0.20131108",
+    "version": "v4.0.20140220",
     "authors": [
         {
             "name": "laravella",
