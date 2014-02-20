@@ -3,7 +3,7 @@
 @section('messages')
 <!-- start// skins::common.inc.messages -->
 
-@if(Options::get('debug'))
+@if(Options::get('debug') && strlen($message) > 0)
 <!-- definitive status message -->
 <div class="alert alert-{{$status}}" id="msg-alert" style="margin-top:auto">
     <button type="button" class="close" data-dismiss="alert">&times;</button>

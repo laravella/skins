@@ -4,6 +4,21 @@ $(function() {
     $('#msg-alert').fadeOut(4000);
 });
 
+function addDetailRecord() {
+    var data = JSON.stringify('hello');
+    $.ajax({
+        data: encodeURIComponent(data),
+        type: "POST",
+        url: '/db/keyfield',
+        timeout: 20000,
+        contentType: "application/x-www-form-urlencoded;charset=utf-8",
+        dataType: 'json',
+        success: function(data) {
+            console.log(data);
+        }
+    });    
+}
+
 function alertBox(message) {
     $(".alert").alert();
 }
