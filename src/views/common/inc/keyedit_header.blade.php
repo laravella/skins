@@ -1,9 +1,9 @@
 @if(!$headerPrinted)
     <input type="hidden" value="{{$record['key_id']}}" name="key_id" />
     <div class="row">
-        <div class="span2">{{$record['key_field_id']}}</div>
+        <div class="span2">Key [{{$record['key_id']}}] Name</div>
         <div class="span6">
-            <input type="text" style="width:480px" name="key_name" value="{{$record['key_name']}}" />
+            <input class="data" data-id="{{$record['key_id']}}" data-tablename="_db_keys" data-fieldname="key_name" type="text" style="width:480px" name="key_name:{{$record['key_id']}}" value="{{$record['key_name']}}" />
         </div>
     </div>        
     <div class="row">
@@ -12,7 +12,7 @@
             <!--
             <input type="text" style="width:200px" name="pkfi_fin" value="{{$record['key_type_id']}}" />
             -->
-            @include('skins::common.inc.keyedit_select', array('fieldName'=>'key_type_id'))
+            @include('skins::common.inc.keyedit_select', array('tableName'=>'_db_keys','fieldName'=>'key_type_id', 'parent_row_id'=>null, 'row_id'=>$record['key_id']))
 
         </div>
     </div>

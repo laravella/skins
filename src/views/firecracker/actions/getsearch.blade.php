@@ -2,7 +2,7 @@
 
 @section('search')
 
-<!-- skins::firecracker.actions.getSearch -->
+<!-- skins::cart.actions.getSearch -->
 
 @if($action == 'getSelect' || $action == 'getSearch')
 {{-- the search popup box --}}

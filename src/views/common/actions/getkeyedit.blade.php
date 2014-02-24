@@ -34,10 +34,8 @@
 ?>
 
 <form method="POST" id="dataForm" action="/db/keys">
-
     @include('skins::common.inc.keyedit_detail')
     @yield('keyedit_detail')
-    
     <div class="well"><input type="submit" class="btn" /></div>
 </form>
 
