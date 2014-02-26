@@ -7,8 +7,9 @@
         <button type="button" class="close" data-dismiss="alert">&times;</button>
         <div class="btn-group">
             <a class="btn" href="#" onclick="javascript:sendSave('{{$record['key_field_id']}}')"><span class="glyphicon glyphicon-floppy-disk icon-ok-circle"></span></a>
+            <a class="btn" href="#" onclick="javascript:getRow('_db_key_fields', '{{$record['key_field_id']}}')"><span class="glyphicon icon-plus-sign"></span></a>
         </div>
-        <strong> Key {{$record['key_id']}} :: Key Field {{$record['key_field_id']}}</strong>
+        <strong>&nbsp; &nbsp; Key {{$record['key_id']}} :: Key Field {{$record['key_field_id']}}</strong>
         <br />
     </div>          
 
