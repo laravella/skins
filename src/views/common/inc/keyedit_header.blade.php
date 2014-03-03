@@ -1,4 +1,5 @@
 @if(!$headerPrinted)
+    <!-- skins::common.inc.keyedit_header -->
     <input type="hidden" value="{{$record['key_id']}}" name="key_id" />
     <div class="row">
         <div class="span2">Key [{{$record['key_id']}}] Name</div>
@@ -9,11 +10,7 @@
     <div class="row">
         <div class="span2">Key Type</div>
         <div class="span4">
-            <!--
-            <input type="text" style="width:200px" name="pkfi_fin" value="{{$record['key_type_id']}}" />
-            -->
             @include('skins::common.inc.keyedit_select', array('tableName'=>'_db_keys','fieldName'=>'key_type_id', 'parent_row_id'=>null, 'row_id'=>$record['key_id']))
-
         </div>
     </div>
     <?php $headerPrinted = true; ?>

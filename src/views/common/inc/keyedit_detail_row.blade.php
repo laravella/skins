@@ -1,13 +1,14 @@
 <!-- start // common.inc.keyedit_detail_row -->
 
-@section('keyedit_detail_row')
-    @include('skins::common.inc.keyedit_header', array('select'=>'key_type_id'))
-
     <div class="well" style="margin-top:auto">
         <button type="button" class="close" data-dismiss="alert">&times;</button>
         <div class="btn-group">
             <a class="btn" href="#" onclick="javascript:sendSave('{{$record['key_field_id']}}')"><span class="glyphicon glyphicon-floppy-disk icon-ok-circle"></span></a>
+            <a class="btn" href="#" onclick="javascript:getRow('_db_key_fields', {{$record['key_id']}}, null)"><span class="glyphicon icon-plus-sign"></span></a>
+            <a class="btn" href="#" onclick="javascript:deleteRow('_db_key_fields', {{$record['key_field_id']}})"><span class="glyphicon icon-remove-circle"></span></a>
+            <!--
             <a class="btn" href="#" onclick="javascript:getRow('_db_key_fields', '{{$record['key_field_id']}}')"><span class="glyphicon icon-plus-sign"></span></a>
+            -->
         </div>
         <strong>&nbsp; &nbsp; Key {{$record['key_id']}} :: Key Field {{$record['key_field_id']}}</strong>
         <br />
@@ -39,6 +40,5 @@
             @include('skins::common.inc.keyedit_select', array('tableName'=>'_db_key_fields', 'fieldName'=>'fkfn_fid', 'select'=>'fullname',  'parent_row_id'=>$record['key_id'], 'row_id'=>$record['key_field_id']))
         </div>
     </div> 
-@show
 
 <!-- end // common.inc.keyedit_detail_row -->
