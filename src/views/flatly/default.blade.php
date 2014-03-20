@@ -32,6 +32,53 @@
         <!-- Additional javascript defined in the template -->
         @yield('extra_head')
 		
+        <script type="text/javascript">
+            function deleteRow(table, id, x) {
+                $('.'+table+'_'+id).hide();
+            }
+            
+            function getRow(table, id, x) {
+                //'_db_key_fields', 100, null
+                $("");
+            }
+
+            function sendSave(tableName, recNo) {
+                    alert(tableName + " : " + recNo);
+
+                var qA = new Object();
+                //qA[tableName] = new Object();
+
+                $(".fld-" + tableName + "-" + recNo).each(function(index, element) {
+
+                    //var table = $(this).attr('data-tablename');
+                    var record = $(this).attr('data-recordid');
+                    var fieldName = $(this).attr('data-fieldname');
+                    var value = $(this).val();
+
+                    qA[fieldName] = value;
+                    //console.log(tableName + fieldName + value);
+
+                });
+                var data = JSON.stringify(qA);
+                console.log(data);
+
+                $.ajax({
+                    data: encodeURIComponent(data),
+                    type: "POST",
+                    url: '/key/keys/' + tableName + '/' + recNo,
+                    timeout: 20000,
+                    contentType: "application/x-www-form-urlencoded;charset=utf-8",
+                    dataType: 'json',
+                    success: function(data) {
+                        console.log(data);
+                    }
+                });
+
+                //$.post('/db/edit/'+tableName+'/'+recNo, 'data='+encodeURIComponent(data), function(data) {console.log(data);}, 'json');
+
+            }
+            
+        </script>
     </head>
     <body>
         
