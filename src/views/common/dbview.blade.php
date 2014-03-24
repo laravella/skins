@@ -1,3 +1,8 @@
+<?php
+    DB::backtrace($log = false);
+//    die;
+?>
+
 @include("skins::common.inc.assets")
 
 @include("skins::common.inc.title")

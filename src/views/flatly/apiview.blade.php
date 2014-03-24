@@ -1,3 +1,7 @@
+<?php
+    Laravella\Crud\DBGopher::backtrace(true);
+?>
+
 {{-- how about a foreach action here? --}}
 
 @include("skins::common.actions.getdelete")
